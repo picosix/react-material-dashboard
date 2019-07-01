@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
+    "server": "node bin/server.js && json-server server/db.json -r server/routes.json -p 3001",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

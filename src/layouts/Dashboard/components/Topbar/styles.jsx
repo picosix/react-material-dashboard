@@ -1,4 +1,6 @@
-export default theme => ({
+import { makeStyles } from '@material-ui/core/styles';
+
+export default makeStyles(theme => ({
   root: {
     borderBottom: `1px solid ${theme.palette.border}`,
     backgroundColor: theme.palette.common.white,
@@ -12,7 +14,7 @@ export default theme => ({
     width: '100%'
   },
   title: {
-    marginLeft: theme.spacing.unit
+    marginLeft: theme.spacing(1)
   },
   menuButton: {
     marginLeft: '-4px'
@@ -21,6 +23,6 @@ export default theme => ({
     marginLeft: 'auto'
   },
   signOutButton: {
-    marginLeft: theme.spacing.unit
+    marginLeft: theme.spacing(1)
   }
-});
+}));

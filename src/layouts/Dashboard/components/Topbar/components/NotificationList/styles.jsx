@@ -1,4 +1,6 @@
-export default theme => ({
+import { makeStyles } from '@material-ui/core/styles';
+
+export default makeStyles(theme => ({
   root: {
     width: '350px',
     maxWidth: '100%'
@@ -29,7 +31,7 @@ export default theme => ({
     backgroundColor: 'rgba(0, 0, 0, 0.03)',
     padding: '10px',
     borderRadius: '50%',
-    marginRight: theme.spacing.unit * 2
+    marginRight: theme.spacing(2)
   },
   listItemTextSecondary: {
     marignTop: '4px',
@@ -41,20 +43,20 @@ export default theme => ({
     width: '16px'
   },
   footer: {
-    paddingBottom: theme.spacing.unit,
+    paddingBottom: theme.spacing(1),
     display: 'flex',
     justifyContent: 'center'
   },
   empty: {
     textAlign: 'center',
-    padding: theme.spacing.unit * 3
+    padding: theme.spacing(3)
   },
   emptyImageWrapper: {
-    marginBottom: theme.spacing.unit * 3
+    marginBottom: theme.spacing(3)
   },
   emptyImage: {
     width: '240px',
     maxWidth: '100%',
     height: 'auto'
   }
-});
+}));
