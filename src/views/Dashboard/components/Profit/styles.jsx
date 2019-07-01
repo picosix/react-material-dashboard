@@ -1,4 +1,6 @@
-export default theme => ({
+import { makeStyles } from '@material-ui/core/styles';
+
+export default makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.primary.main,
     borderColor: theme.palette.primary.main,
@@ -32,4 +34,4 @@ export default theme => ({
     height: '2rem',
     fontSize: '2rem'
   }
-});
+}));
