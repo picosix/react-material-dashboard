@@ -30,6 +30,7 @@
     "@material-ui/styles": "^4.0.0-beta.1",
     "chart.js": "^2.7.3",
     "classnames": "^2.2.6",
+    "faker": "^4.1.0",
     "history": "^4.7.2",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",

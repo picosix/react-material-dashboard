@@ -4,12 +4,12 @@ import React from 'react';
 import classNames from 'classnames';
 
 // Material components
-import { Paper } from '@material-ui/core';
+import { Paper as MUIPaper } from '@material-ui/core';
 
 // Component styles
 import useStyles from './styles';
 
-const CustomPaper = ({ className, outlined, squared, children, ...rest }) => {
+const Paper = ({ className, outlined, squared, children, ...rest }) => {
   const classes = useStyles();
 
   const rootClassName = classNames(
@@ -22,10 +22,10 @@ const CustomPaper = ({ className, outlined, squared, children, ...rest }) => {
   );
 
   return (
-    <Paper {...rest} className={rootClassName}>
+    <MUIPaper {...rest} className={rootClassName}>
       {children}
-    </Paper>
+    </MUIPaper>
   );
 };
 
-export default CustomPaper;
+export default Paper;
